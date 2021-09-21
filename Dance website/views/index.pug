@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    title Kirtika Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src="/static/img/mj.jpg") 
+                | KDA
+            li #[a(href='/') Home] 
+            li #[a(href='/') About Us] 
+            li #[a(href='/') Services] 
+            li #[a(href='/') Class Info]
+            li #[a(href='/') Contact US]
+    section#introSection
+        div Welcome to Kirtika's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/pose.gif")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/images.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/images.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+    section#sponsorsSection
+        h2 our sponsors 
+        div#sponsors 
+            img(src="/static/img/apple.webp", alt="sponsors image", Class="spImage")
+            img(src="/static/img/Black-And-White-Skype-Logo-PNG-Photo.png", alt="sponsors image", Class="spImage")
+            img(src="/static/img/micro.png", alt="sponsors image", Class="spImage")
+            img(src="/static/img/hp.png", alt="sponsors image", Class="spImage")
+    
+    footer#footer
+        | Copyright © 2019 KirtikaDanceAcademy.com | All right reserved
+    
+    script
+      include ../static/index.js
